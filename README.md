@@ -1,5 +1,7 @@
 # DjangoCelery
 
+[![Tests](https://github.com/sanjarbek-ashurboyev/DjangoCelery/actions/workflows/tests.yml/badge.svg)](https://github.com/sanjarbek-ashurboyev/DjangoCelery/actions/workflows/tests.yml)
+
 A small example of moving slow work out of the request cycle with Celery. The user enters
 an email address, Django generates a one-time code, stores it in Redis and hands the
 email off to a Celery worker, so the page responds immediately instead of waiting for
