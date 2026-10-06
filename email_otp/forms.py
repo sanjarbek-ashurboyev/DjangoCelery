@@ -1,5 +1,5 @@
-from django.forms import Form, CharField
+from django.forms import Form, EmailField
 
 
 class EmailForm(Form):
-    email = CharField(max_length=255)
+    email = EmailField(max_length=255)

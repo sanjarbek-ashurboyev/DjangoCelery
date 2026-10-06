@@ -160,7 +160,7 @@
                     placeholder="example@mail.com"
                     required
                 >
-                <div class="error-text" id="emailError"></div>
+                <div class="error-text" id="emailError"{% if form.email.errors %} style="display: block"{% endif %}>{{ form.email.errors.0 }}</div>
             </div>
 
             <button type="submit" class="btn" id="submitBtn">OTP Kodi Yuborish</button>
